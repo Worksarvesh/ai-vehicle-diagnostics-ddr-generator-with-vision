@@ -6,11 +6,7 @@ AI-powered system that generates **Detailed Diagnostic Reports (DDR)** for vehic
 
 ---
 
-## 🎬 Demo
 
-![Demo](assets/demo.gif)
-
----
 
 ## 📌 Features
 
@@ -23,9 +19,6 @@ AI-powered system that generates **Detailed Diagnostic Reports (DDR)** for vehic
 
 ---
 
-## 🏗️ Architecture
-
----
 
 ## 📥 Sample Input
 
@@ -43,38 +36,4 @@ AI-powered system that generates **Detailed Diagnostic Reports (DDR)** for vehic
     "inspection": "Normal condition"
   }
 }
-ai-ddr-generator/
-│
-├── app/
-│   ├── ddr_generator.py
-│   ├── image_handler.py
-│   └── utils.py
-│
-├── api/
-│   └── groq_client.py
-│
-├── data/
-│   ├── sample_input.json
-│   └── sample_output.json
-│
-├── assets/
-│   ├── demo.gif
-│   ├── output.png
-│   └── architecture.png
-│
-├── docs/
-│   └── system_design.md
-│
-├── tests/
-│   └── test_ddr.py
-│
-├── .env.example
-├── requirements.txt
-├── README.md
-└── main.py
 
-git clone https://github.com/your-username/ai-ddr-generator.git
-cd ai-ddr-generator
-pip install -r requirements.txt
-
-python main.py
