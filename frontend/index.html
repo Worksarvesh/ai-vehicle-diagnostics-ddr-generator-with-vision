@@ -4,79 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Vehicle Diagnostics</title>
-    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="app-shell">
-      <header>
-        <h1>AI Vehicle Diagnostics</h1>
-        <p>Fast vehicle inspection predictions with confidence and recommendation clarity.</p>
-      </header>
-
-      <main>
-        <form id="diagnostic-form" class="panel" enctype="multipart/form-data">
-          <div class="form-row">
-            <label for="engine_temp">Engine Temp (°C)</label>
-            <input id="engine_temp" name="engine_temp" type="number" min="0" max="250" step="0.1" required />
-          </div>
-
-          <div class="form-row">
-            <label for="brake_wear_pct">Brake Wear (%)</label>
-            <input id="brake_wear_pct" name="brake_wear_pct" type="number" min="0" max="100" step="0.1" required />
-          </div>
-
-          <div class="form-row">
-            <label for="battery_voltage">Battery Voltage</label>
-            <input id="battery_voltage" name="battery_voltage" type="number" min="0" max="30" step="0.1" required />
-          </div>
-
-          <div class="form-row">
-            <label for="tire_pressure">Tire Pressure (PSI)</label>
-            <input id="tire_pressure" name="tire_pressure" type="number" min="0" max="60" step="0.1" required />
-          </div>
-
-          <div class="form-row">
-            <label for="chain_tension">Chain Tension</label>
-            <input id="chain_tension" name="chain_tension" type="number" min="0" max="100" step="0.1" required />
-          </div>
-
-          <div class="form-row">
-            <label for="ambient_temp">Ambient Temp (°C)</label>
-            <input id="ambient_temp" name="ambient_temp" type="number" min="-40" max="80" step="0.1" required />
-          </div>
-
-          <div class="form-row toggle-row">
-            <label>
-              <input id="smoke_detected" name="smoke_detected" type="checkbox" />
-              Smoke detected
-            </label>
-            <label>
-              <input id="abnormal_noise" name="abnormal_noise" type="checkbox" />
-              Abnormal noise
-            </label>
-          </div>
-
-          <div class="form-row">
-            <label for="inspection_image">Inspection Image</label>
-            <input id="inspection_image" name="image" type="file" accept="image/*" />
-            <p class="hint">Optional: upload a diagnostic image to improve prediction.</p>
-          </div>
-
-          <div class="form-row">
-            <label for="api_key">API Key</label>
-            <input id="api_key" name="api_key" type="password" placeholder="demo-key" value="demo-key" required />
-          </div>
-
-          <button type="submit" class="primary-button">Predict</button>
-        </form>
-
-        <section id="result" class="panel hidden">
-          <div id="status-box" class="status-box"></div>
-          <div id="result-body"></div>
-        </section>
-      </main>
-    </div>
-
-    <script src="app.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

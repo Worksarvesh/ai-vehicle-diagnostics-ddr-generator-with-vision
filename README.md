@@ -58,14 +58,22 @@ cp .env.example .env
 2. Start the API:
 
 ```bash
-uvicorn backend.app:app --reload --host 0.0.0.0 --port 8000
+uvicorn backend.app:app --host 0.0.0.0 --port 8000
 ```
 
-3. Open the frontend in your browser:
+## ⚛️ Run the React Frontend
 
-- `frontend/index.html`
+In a **separate terminal**:
 
-> If you serve the static HTML from a simple server, it can call the API at `http://localhost:8000`.
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Then open: `http://localhost:3000`
+
+The dev server automatically proxies API calls to `http://localhost:8000`.
 
 ## 📡 API Endpoints
 
@@ -116,11 +124,14 @@ Response:
 
 ## 🧩 Frontend Usage
 
-Open `frontend/index.html` in a browser and submit the inspection form.
+The React frontend provides a modern, interactive interface for vehicle diagnostics:
 
-- Uses the API to get prediction results
-- Displays confidence and probability breakdown
-- Supports error and loading states
+- Submit inspection data with optional image upload
+- Get real-time prediction results with confidence scores
+- View probability distribution across severity levels
+- See extracted image features from uploaded diagnostic images
+
+Built with React 18 + Vite for fast development and optimized builds.
 
 ## 🛠️ Deployment
 
