@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+logs/
+ml_model/vehicle_diagnostics_xgb.pkl
+.env
+.DS_Store
