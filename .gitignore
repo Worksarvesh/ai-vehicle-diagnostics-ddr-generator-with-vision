@@ -8,3 +8,7 @@ logs/
 ml_model/vehicle_diagnostics_xgb.pkl
 .env
 .DS_Store
+node_modules/
+dist/
+.vite/
+*.lock
